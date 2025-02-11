@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+body {
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+}
+
+input:valid {
+    border: green 1px solid;
+}
+
+input:invalid {
+    border: red 1px solid;
+}
+
+.container {
+    display: flex;
+    height: 100dvh;
+    font-family: 'source_sans_proregular', monospace;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    background-image: url("/adventure-background.jpg");
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(249, 248, 248);
+    padding: 3rem;
+    padding-top: 6rem; 
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-wrap: wrap;
+}
+
+.openingStatement {
+    width: 90%;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    flex: auto;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="sideBar">
+            <div class="logo">
+                Odin
+            </div>
+        </section>
+        <div class="signUpForm">
+            <header>
+                <div class="openingStatement">
+                    This is not a real online service! You know you need something like this in your lift to help you realize your deepest dreams.
+                    <br> Sign up <i>now</i> to get started.
+                </div>
+                <div>
+                    <br>
+                    You <i>know</i> you want to.
+                </div>
+            </header>
+            <form action="/path/to/file" method="post">
+                <h2>Let's do this!</h2>
+                <div class="firstBlock">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]*" placeholder="Enter your first name here" required>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]*" placeholder="Enter your last name here" required>      
+                </div>
+                <div class="secondBlock">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{10}|[0-9]{3}[ .-]*[0-9]{3}[ .-]*[0-9]{4}" placeholder="Enter your phone number here" required>      
+                </div>
+                <div class="thirdBlock">
+                    <label for="password">PASSWORD</label>
+                    <input type="text" name="password" id="password" placeholder="Enter your password here" required>
+                    <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                    <input type="text" name="passwordConfirm" id="passwordConfirm" placeholder="Re-enter your password here" required>      
+                </div>
+            </form>
+            <section class="footer">
+                <input type="submit" value="Create Account">
+                <div>
+                    Already have an account? Log in
+                </div>
+            </section>        
+        </div>
+    </div>
+</body>
+</html>
