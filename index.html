@@ -13,7 +13,7 @@
                 ODIN
             </div>
             <div class="sideBarFooter">
-                Photo from Pixiv.
+                Photo from <span>Pixiv</span>.
             </div>
         </section>
         <div class="signUpForm">
@@ -29,23 +29,23 @@
             </header>
             <form action="/path/to/file" method="post">
                 <h2>Let's do this!</h2>
-                <div class="inputField">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]*" required>
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]*" required>      
-                </div>
-                <div class="inputField">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email here" required>
-                    <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{10}|[0-9]{3}[ .-]*[0-9]{3}[ .-]*[0-9]{4}" placeholder="Enter your phone number here" required>      
-                </div>
-                <div class="inputField">
-                    <label for="password">PASSWORD</label>
-                    <input type="text" name="password" id="password" placeholder="Enter your password here" required>
-                    <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                    <input type="text" name="passwordConfirm" id="passwordConfirm" placeholder="Re-enter your password here" required>      
+                <div class="fieldContainer">
+                    <div class="inputField">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]*" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="inputField">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]*" required>      
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{10}|[0-9]{3}[ .-]*[0-9]{3}[ .-]*[0-9]{4}" required> 
+                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="passwordConfirm" id="passwordConfirm" required>           
+                    </div>    
                 </div>
             </form>
             <section class="footer">

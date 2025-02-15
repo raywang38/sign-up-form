@@ -4,7 +4,6 @@
          url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html,
@@ -41,6 +40,10 @@ input:focus {
     align-items: center;
 }
 
+.sideBarFooter {
+    color: white;
+}
+
 .logo {
     background-color: black;
     opacity: 0.1;
@@ -65,7 +68,34 @@ header {
 }
 
 form {
-    padding: 0.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 3rem 2rem;
+    font-size: 12px;
+    border-bottom: 2px solid #dfdfdf;
+    gap: 1rem;
+}
+
+.fieldContainer {
+    display: flex;
+    gap: 3rem;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-weight: 900;
+    color: darkslategrey;
+}
+
+.inputField input {
+    width: 15em;
+    border: 1px solid lightgray;
+}
+
+.inputField label {
+    padding-top: 0.25rem;
 }
 
 .footer {
@@ -83,7 +113,7 @@ input[type="submit"] {
     margin-bottom: 0.75rem;
 }
 
-a {
+.footer a {
     text-decoration: none;
     color: #596D48;
     font-weight: 900;
