@@ -10,7 +10,10 @@
     <div class="container">
         <section class="sideBar">
             <div class="logo">
-                Odin
+                ODIN
+            </div>
+            <div class="sideBarFooter">
+                Photo from Pixiv.
             </div>
         </section>
         <div class="signUpForm">
@@ -26,19 +29,19 @@
             </header>
             <form action="/path/to/file" method="post">
                 <h2>Let's do this!</h2>
-                <div class="firstBlock">
+                <div class="inputField">
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]*" placeholder="Enter your first name here" required>
+                    <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]*" required>
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]*" placeholder="Enter your last name here" required>      
+                    <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]*" required>      
                 </div>
-                <div class="secondBlock">
+                <div class="inputField">
                     <label for="email">EMAIL</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email here" required>
                     <label for="phoneNumber">PHONE NUMBER</label>
                     <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{10}|[0-9]{3}[ .-]*[0-9]{3}[ .-]*[0-9]{4}" placeholder="Enter your phone number here" required>      
                 </div>
-                <div class="thirdBlock">
+                <div class="inputField">
                     <label for="password">PASSWORD</label>
                     <input type="text" name="password" id="password" placeholder="Enter your password here" required>
                     <label for="passwordConfirm">CONFIRM PASSWORD</label>
@@ -48,7 +51,7 @@
             <section class="footer">
                 <input type="submit" value="Create Account">
                 <div>
-                    Already have an account? Log in
+                    Already have an account? <a href="">Log in</a>
                 </div>
             </section>        
         </div>

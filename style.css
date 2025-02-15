@@ -14,12 +14,16 @@ body {
     padding: 0;
 }
 
-input:valid {
-    border: green 1px solid;
+input:default {
+    border: #E5E7EB 1px solid;
 }
 
-input:invalid {
+input:user-invalid {
     border: red 1px solid;
+}
+
+input:focus {
+    border: blue 0.25px solid;
 }
 
 .container {
@@ -35,6 +39,11 @@ input:invalid {
     background-image: url("/adventure-background.jpg");
     justify-content: center;
     align-items: center;
+}
+
+.logo {
+    background-color: black;
+    opacity: 0.1;
 }
 
 header {
@@ -56,5 +65,26 @@ header {
 }
 
 form {
+    padding: 0.5rem 3rem;
+}
+
+.footer {
     flex: auto;
+    padding: 3rem;
+}
+
+input[type="submit"] {
+    background-color: #596D48;
+    padding: 0.75rem 3rem;
+    border-radius: 0.5rem;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 900;
 }
