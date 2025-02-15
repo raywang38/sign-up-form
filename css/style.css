@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'source_sans_proregular';
-    src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'norse';
-    src: url("fonts/Norse-Bold.otf") format("opentype");
+    src: url("../fonts/Norse-Bold.otf") format("opentype");
 }
 
 html,
@@ -40,7 +40,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     min-width: 40%;
-    background-image: url("/halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: url("../img/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     align-items: center;
     justify-content: space-between;
