@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'norse';
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
 html,
 body {
     height: 100dvh;
@@ -35,18 +40,35 @@ input:focus {
     display: flex;
     flex-direction: column;
     min-width: 40%;
-    background-image: url("/adventure-background.jpg");
-    justify-content: center;
+    background-image: url("/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
     align-items: center;
+    justify-content: space-between;
 }
 
 .sideBarFooter {
     color: white;
+    font-size: small;
+}
+
+.sideBarFooter a {
+    color: white;
 }
 
 .logo {
-    background-color: black;
-    opacity: 0.1;
+    background-color: rgba(11, 9, 9, 0.3);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 5rem;
+    font-family: "norse";
+    margin: 10rem;
+}
+
+.logo img {
+    width: 3rem;
+    height: auto;
 }
 
 header {
@@ -67,7 +89,7 @@ header {
     flex-direction: column;
 }
 
-form {
+.fieldForm {
     display: flex;
     flex-direction: column;
     padding: 0.5em 3rem 2rem;
